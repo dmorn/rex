@@ -23,7 +23,6 @@ defmodule Rex do
   """
   def add(a, b) do
     if is_point(a) and is_point(b), do: raise(RuntimeError)
-
     Nx.add(a, b)
   end
 
@@ -54,7 +53,6 @@ defmodule Rex do
   """
   def multiply(v, amount) do
     if is_point(v), do: raise(RuntimeError)
-
     Nx.multiply(v, amount)
   end
 
@@ -93,7 +91,6 @@ defmodule Rex do
   """
   def dot(a, b) do
     if is_point(a) or is_point(b), do: raise(RuntimeError)
-
     Nx.dot(a, b)
   end
 
